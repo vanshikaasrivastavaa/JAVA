@@ -1,0 +1,30 @@
+package constructor;
+
+public class defaultt {
+	int sid;
+	String sname,city;
+	float marks;
+	//constructor
+	defaultt()
+	{
+	sid = 1;
+	sname = "vanshika";
+	city = "sultanpur";
+	marks = 11.11f;
+	}
+	void show()
+	{
+	System.out.println(sid);
+	System.out.println(sname);
+	System.out.println(city);
+	System.out.println(marks);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		defaultt s1 = new defaultt();
+      s1.show();
+	}
+
+}
