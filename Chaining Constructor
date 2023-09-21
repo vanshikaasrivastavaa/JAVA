@@ -1,0 +1,23 @@
+package constructor;
+
+public class chaining {
+	chaining()
+	{
+		this(10);
+		System.out.println("def const call");
+	}
+	chaining(int x)
+	{
+		this(10,20);
+		System.out.println(x);
+	}
+	chaining(int x,int y)
+	{
+		System.out.println(x+y);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       new chaining();
+	}
+
+}
