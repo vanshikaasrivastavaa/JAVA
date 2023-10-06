@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class frequency {
+	public static void main(String arg[])
+	{
+		Scanner in=new Scanner(System.in);
+		System.out.println("enter element");
+		String s= in.nextLine();
+		s=s.toLowerCase();
+//		to count each letter frequency
+		System.out.println("character\tfrequency");
+		for(char c='a';c<='z';c++)
+		{
+			int d=0;
+			for (int i=0;i<s.length();i++)
+			{
+				if(c==s.charAt(i))
+				d++;
+			}
+			if(d!=0)
+				System.out.println(c+"\t"+d);
+		}
+	}
+		
+}
